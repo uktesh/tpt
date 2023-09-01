@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="formanddisplay">  
+        <div id="formdiv">
+            <h2>Student Form</h2>
+            <div id="inputname">
+                <h4>Enter Your name : </h4>
+                <input type="text" id="firstname" placeholder="Enter your FirstName"><br>
+                <input type="text" id="lastname" placeholder="Enter your LastName" />
+                <h4>Mail Id :</h4>
+                <input type="text" id="mail" placeholder="Name@gmail.com" />
+                <h4>Mobile No :</h4>
+                <input type="text" id="mobileno" placeholder="+91 9999999999" />
+               </div>
+               <div id="radiobtn">
+                <h4>Gender</h4>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="nottotell" name="gender" value="Not Prefered to tell" checked>
+                <label for="notottell">Not Prefered To Tell</label><br>
+               </div>
+               <div id="chackbox">
+                <h4>Fav-Language</h4>
+                <input type="checkbox" id="python" name="fav-language" value="Python">
+                <label for="python"> Python</label><br>
+                <input type="checkbox" id="java" name="fav-language" value="Java">
+                <label for="java">Java</label><br>
+                <input type="checkbox" id="c++" name="fav-language" value="C++">
+                <label for="c++">C++</label>
+               </div>
+               <div id="country">
+                <h4>Country :</h4>
+                <label for="cars">Choose Your Country :</label>
+                    <select name="country" id="selectcountry">
+                    <sds value="India">sds</sds>
+                    <sds value="USA">USA</sds>
+                    <sds value="China">China</sds>
+                    <sds value="Japan">Japan</sds>
+                    <sds value="UK">UK</option>
+                    </select>
+               </div>
+               <div>
+                <h4>More About You : </h4>
+                <textarea id="description" rows="10" cols="40" placeholder="Let Us Know More About You..."></textarea>
+               </div>
+                <br><br><button id="sumbmitbtn" >Submit</button>
+                <button onclick="sam()">click</button>
+        </div>
+        <div id="display">
+
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
